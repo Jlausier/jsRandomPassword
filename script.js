@@ -3,6 +3,7 @@
 //if less than 8 or more than 128 alert
 
 // if between 8 and 128 confirm lowercase 
+
 //confirm upercase
 //confirm numeric
 //confirm special chars
@@ -12,7 +13,7 @@
 //print password to screen
 
 //////////////////////////////////////////////////
-var generatePassword = ([x]+[y]+[z])
+
 // Number array lower
 const lowLetter = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 //Number array Upper
@@ -25,16 +26,26 @@ const special = ["!", "#", "$", "%", "&","*", "?", "@", "^"];
 
 //all the promts, length,cap,lower,special,numeric
 
-if (passOBj.count <8 || passObj.count > 128) {
-  alert("That number is not between 8 and 128. Please enter a correct number")
-};
-if (passOBj.count >=8 || passObj.count <= 128) {
-  alert("would you like Lower case Letters in your password?")
-  }
-  
-}
-//function buildPassword
+// if (passOBj.count <8 || passObj.count > 128) {
+//   alert("That number is not between 8 and 128. Please enter a correct number")
+// };
 
+// if (passOBj.count >=8 || passObj.count <= 128) {
+//   alert("Would you like Lower case Letters in your password?")
+
+
+//function generate password
+function generatePassword (){
+  let passOBj = prompt("How many charecters long would you like your password?");
+} if  ( passOBj.count <8 || passOBj.count > 128){
+alert ("That number is not between 8 and 128. Please enter a correct number")
+ 
+} 
+
+
+
+//
+ 
 // if want caps then concat caps to password
 
 
