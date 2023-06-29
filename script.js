@@ -71,7 +71,10 @@ if(confirmnumbers){
 if(confirmspecial){
   password = password.concat(special)
   console.log(password);
-} 
+} else {
+  alert("Please try again!")
+  generatePassword()
+}
 // test to see if we get concat array- note we may need to make a final array to concat too
 let newPassword = []
 // once we have a final array we can loop over ist however many times the user chose and get a random value out with math.random
@@ -79,16 +82,16 @@ for (var index = 0; index < passOBj; index++) {
   newPassword = newPassword.concat(password[Math.floor(Math.random() * password.length)]);
 console.log(newPassword);
 }
-
+// finally return the joined string ass the password
 return newPassword;
 
 }
   
 }
 
-// look at the join method 
 
-// finally return the joined string ass the password
+
+
 
 
 
