@@ -19,16 +19,13 @@ const lowLetter = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "
 //Number array Upper
 const tallLetter = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 //Numeric array
-const numbers = ["1","2","3","4","5","6","7","8","9","0"]
+const numbers = [1,2,3,4,5,6,7,8,9,0]
 
 //Special charecters array
 const special = ["!", "#", "$", "%", "&","*", "?", "@", "^"];
 
 //all the promts, length,cap,lower,special,numeric
 
-// if (passOBj.count <8 || passObj.count > 128) {
-//   alert("That number is not between 8 and 128. Please enter a correct number")
-// };
 
 // if (passOBj.count >=8 || passObj.count <= 128) {
 //   alert("Would you like Lower case Letters in your password?")
@@ -36,15 +33,29 @@ const special = ["!", "#", "$", "%", "&","*", "?", "@", "^"];
 
 //function generate password
 function generatePassword (){
-  let passOBj = prompt("How many charecters long would you like your password?");
-} if  ( passOBj.count <8 || passOBj.count > 128){
-alert ("That number is not between 8 and 128. Please enter a correct number")
+const passOBj =prompt("How many charecters long would you like your password?");
+console.log(passOBj);
+}
+// (length,hasNumbers,hasspecial,haslowletter,hastallletter)=>{
+  
+  // const passOBj = [
+  //   (hasNumbers  ? numbers: [])
+  //   (hasspecial  ? special: [])
+  //   (hastallletter  ? tallLetter: [])
+  //   (haslowletter ? lowLetter: [])
+  // ]
+  //  for(let i= 0; i <length; i++){
+  //   const randomIndex = Math.floor(Math.random() * passOBj.length);
+  //  }
+  //hit btn prompt how many chars
+  
+  if  ( generatePassword.length <8 || passOBj.count > 128){
+    alert ("That number is not between 8 and 128. Please enter a correct number")
+    }
+
  
-} 
 
 
-
-//
  
 // if want caps then concat caps to password
 
