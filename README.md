@@ -8,4 +8,4 @@ This really challenged and gave me a good basic understanding of javascript, by 
 
 
 ## Screenshot
-![screenshot] (images\Screenshot 2023-06-29 password generator.png)
+![Screenshot](./images/Screenshot%202023-06-29%20password%20generator.png)
