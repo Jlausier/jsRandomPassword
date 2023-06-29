@@ -24,34 +24,38 @@ const numbers = [1,2,3,4,5,6,7,8,9,0]
 //Special charecters array
 const special = ["!", "#", "$", "%", "&","*", "?", "@", "^"];
 
-//all the promts, length,cap,lower,special,numeric
+var confirmlowLetter;
+var confirmtallletter;
+var confirmnumbers;
+var confirmspecial;
 
 
 // if (passOBj.count >=8 || passObj.count <= 128) {
 //   alert("Would you like Lower case Letters in your password?")
-
+let passOBj = [""]
+let password = [""]
 
 //function generate password
 function generatePassword (){
+   //hit btn prompt how many chars
 const passOBj =prompt("How many charecters long would you like your password?");
 console.log(passOBj);
-}
-// (length,hasNumbers,hasspecial,haslowletter,hastallletter)=>{
-  
-  // const passOBj = [
-  //   (hasNumbers  ? numbers: [])
-  //   (hasspecial  ? special: [])
-  //   (hastallletter  ? tallLetter: [])
-  //   (haslowletter ? lowLetter: [])
-  // ]
-  //  for(let i= 0; i <length; i++){
-  //   const randomIndex = Math.floor(Math.random() * passOBj.length);
-  //  }
-  //hit btn prompt how many chars
-  
-  if  ( generatePassword.length <8 || passOBj.count > 128){
+console.log(typeof passOBj);
+
+// gather input value
+ if  (parseInt(passOBj) < 8 || parseInt(passOBj) > 128){
     alert ("That number is not between 8 and 128. Please enter a correct number")
-    }
+} else {
+  // All the confirms
+   confirmlowLetter = confirm("Would you like Lower case Letters in your password?")
+
+   
+   confirmtallletter = confirm("Would you like Upper case letters in your password?")
+   confirmnumbers = confirm("Would you like Numbers in your password?")
+   confirmspecial = confirm("Would you like Special charecters in your password?")
+}
+}
+
 
  
 
