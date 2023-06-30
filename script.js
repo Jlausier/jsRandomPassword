@@ -44,39 +44,39 @@ console.log(typeof passOBj);
 
 // gather input value
  if  ((passOBj) < 8 || (passOBj) > 128){
-    alert ("That number is not between 8 and 128. Please enter a correct number")
+    alert ("That number is not between 8 and 128. Please enter a correct number");
 } else {
   // All the confirms
-   confirmlowLetter = confirm("Would you like Lower case Letters in your password?")
+   confirmlowLetter = confirm("Would you like Lower case Letters in your password?");
 
    
-   confirmtallletter = confirm("Would you like Upper case letters in your password?")
-   confirmnumbers = confirm("Would you like Numbers in your password?")
-   confirmspecial = confirm("Would you like Special charecters in your password?")
+   confirmtallletter = confirm("Would you like Upper case letters in your password?");
+   confirmnumbers = confirm("Would you like Numbers in your password?");
+   confirmspecial = confirm("Would you like Special charecters in your password?");
 
    
 
 if(confirmlowLetter){
-  password = password.concat(lowLetter)
+  password = password.concat(lowLetter);
 }
 // do the same check for every confirm
 if(confirmtallletter){
-  password = password.concat(tallLetter)
+  password = password.concat(tallLetter);
   
 }
 
 if(confirmnumbers){
-  password = password.concat(numbers)
+  password = password.concat(numbers);
 }
 if(confirmspecial){
-  password = password.concat(special)
+  password = password.concat(special);
   console.log(password);
 } else {
-  alert("Please try again!")
+  alert("Please try again!");
   generatePassword()
 }
 // test to see if we get concat array- note we may need to make a final array to concat too
-let newPassword = []
+let newPassword = ""
 // once we have a final array we can loop over ist however many times the user chose and get a random value out with math.random
 for (var index = 0; index < passOBj; index++) {
   newPassword = newPassword.concat(password[Math.floor(Math.random() * password.length)]);
